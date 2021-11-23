@@ -1,30 +1,23 @@
-# Vietnamese ALPR_System
-_An Automatic License Plate Recognition System for Vietnamese Plates_
+# Bien so xe
+_Một hệ thống nhận dạng biển số xe tự động cho biển số Việt Nam_
 
-This system can detect and recognize 2 types of license plate in Vietnam, rectangle plates and square plates.
+Hệ thống này có thể phát hiện và nhận dạng 2 loại biển số xe ở Việt Nam, biển số chữ nhật và biển số vuông
 
-## Abstract
-- This system can detect and recognize license plates from images, videos and webcams.
-- Within this project, the camera's position is fixed and only one car at a time can drive through the gate. Therefore, the system is only able to detect 1 plate per frame.
-## Method
-1. Plate detection
-   - Sobel X for detecting vertical edges followed by a morphological transformation.
-   - Finding contours which satisfy the ratio of the plate to get the possible plates
-   - Checking for characters on the possible plates found to assure it is a license plate.
-2. Plate recognition
-   - For character recognition, I used MobileNet_v1_0.5_128 as it was lightweight and suitable for real-time recognition.
+## Tong quat
+- Hệ thống này có thể phát hiện và nhận dạng biển số xe từ hình ảnh, video và webcam.
+- Trong dự án này, vị trí của camera là cố định và mỗi lần chỉ có một xe ô tô chạy qua cổng. Do đó, hệ thống chỉ có thể phát hiện 1 tấm trên mỗi khung hình.
+## Phuong phap
+1. Phát hiện mảng
+   - Sobel X để phát hiện các cạnh dọc theo sau bởi một sự biến đổi hình thái.
+   - Tìm các đường bao thỏa mãn tỷ lệ của tấm để có được các tấm có thể
+   - Kiểm tra các ký tự trên biển số có thể tìm thấy để đảm bảo đó là biển số xe.
+2. Nhận dạng tấm
+   - Để nhận dạng ký tự, tôi đã sử dụng MobileNet_v1_0.5_128 vì nó nhẹ và phù hợp để nhận dạng thời gian thực.
 
-## Requirements
-- python 3.6
-- run `pip install -r requirements.txt`
+## Yeu cau
+- python 3.6 - 3.9
+- chạy `pip install -r request.txt
 
-## Implementation
-- run `test.py` for testing on a video.
-- run `test_image.py` for testing on an image.
-
-## Result
-- ![Demo](https://github.com/longphungtuan94/ALPR_System/blob/master/test_videos/screenshot_1.png)
-- ![Demo2](https://github.com/longphungtuan94/ALPR_System/blob/master/test_videos/screenshot_2.png)
-
-## Note
-- You should play with these parameters: `minPlateArea`, `maxPlateArea` and `ksize` in `cv2.getStructuringElement` to implement successfully on your own case.
+## Thuc hien
+- chạy `test.py` để thử nghiệm trên video.
+- chạy `test_image.py` để thử nghiệm trên một hình ảnh.
