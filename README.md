@@ -21,3 +21,6 @@ Hệ thống này có thể phát hiện và nhận dạng 2 loại biển số 
 ## Thuc hien
 - chạy `test.py` để thử nghiệm trên video.
 - chạy `test_image.py` để thử nghiệm trên một hình ảnh.
+## Ket qua
+- ![Demo](https://github.com/Lizst319/Tieu-luan-2/blob/main/screenshot_1.png)
+- ![Demo](https://github.com/Lizst319/Tieu-luan-2/blob/main/screenshot_2.png)
